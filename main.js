@@ -56,7 +56,7 @@ submitBtn.addEventListener('click', function (e) {
             <li class="calc__li">3. Add the longest length to this number: ${twoSmallMultiply} + ${allpointsArr[2]} = ${overallSize}.</li>
 
             <p class="calc__p">
-                <span class="span-strong"> The overall is in this case ${overallSize} cm.</span>
+                <span class="span-strong"> The overall is in this case is ${overallSize}cm.</span>
             </p>
            `;
 
