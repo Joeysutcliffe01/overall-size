@@ -32,7 +32,7 @@ submitBtn.addEventListener('click', function (e) {
             calcImg.remove('.active')    
             displyOverallSize.classList.add("active"); 
       
-            displyOverallSize.textContent = `OverallSize ${overallSize} cm`
+            displyOverallSize.textContent = `Overall size is ${overallSize}cm`
 
             calcHowTo.innerHTML = '';
 
