@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Overall Size Calculator</title>
+
+</head>
+
+<body>
+    <section class="calc">
+        <form class="calc__container">
+
+            <h1 class="calc__h1">Overall Size Calculator</h1>
+
+            <input 
+            data-input 
+            type="number"
+            id="length"
+            class="calc__input length" placeholder="Length in cm">
+
+            <input 
+            data-input 
+            type="number"
+            id="width"
+            class="calc__input width" placeholder="Width in cm">
+
+            <input 
+            data-input 
+            type="number"          
+            id="height"
+            class="calc__input height" placeholder="Height in cm">
+             
+             <button class="submit__btn hover">Submit</button>
+            
+
+             <div class="ans__container">
+                <img class="calc__img active" src="img/parcel.png"
+                alt="Unknown Parcel Size">
+                
+                <p class="ans__p">271 cm</p>
+
+            </div>
+            
+        </form>
+
+        
+    </section>
+
+    <section class="calc__info">
+        <div class="calc__container-info">
+
+            <h1 class="calc__h1" id="calc__h1">How to calculate the overall size</h1>
+
+            <p class="calc__p">
+                When sending your parcel, it's important that it meets the size guidelines: Parcel sizes.
+                With some services there are restrictions on the maximum allowed which is calculated with the Overall
+                Size.
+            </p>
+
+            <p class="calc__p">
+                <span class="span-orange"> How to calculate overall size:</span> Take the two shortest sides of your
+                parcel and sum them.
+                Multiply the sum by 2 and finally add the length. The total is the overall size.
+            </p>
+
+            <li class="calc__li">1. Add together the 2 shortest sides: 40 + 50 = 90.</li>
+            <li class="calc__li">2. Multiply this number by 2: 90 x 2 = 180.</li>
+            <li class="calc__li">3. Add the longest length to this number: 180 + 55 = 235.</li>
+
+            <p class="calc__p">
+                <span class="span-strong"> The overall is in this case 235 cm.</span>
+            </p>
+
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
