@@ -79,6 +79,7 @@ body {
 .calc__img {
   max-width: 10rem;
   opacity: 0;
+  /* border: 2px solid red; */
 }
 
 .ans__p {
@@ -91,13 +92,6 @@ body {
   border-radius: 0.5rem;
   width: max-content;
   opacity: 0;
-}
-
-.active {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  transform-origin: center;
 }
 
 .scrolldown {
@@ -157,10 +151,22 @@ body {
   }
 }
 
-@media only screen and (min-height: 847px) {
-  .scrolldown {
-    display: unset;
-  }
+.active {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+
+.inactive {
+  display: none;
+}
+
+.rotate {
+  animation: rotate ease 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-delay: 1s;
 }
 
 @keyframes fadeInAnimation {
@@ -173,7 +179,7 @@ body {
 }
 
 @keyframes rotate {
-  50% {
-    transform: rotate(180deg);
+  100% {
+    transform: rotate(360deg);
   }
 }

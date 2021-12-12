@@ -28,10 +28,9 @@ submitBtn.addEventListener('click', function (e) {
       const overallSize = (twoSmallMultiply + allpointsArr[2])
 
         if(displyOverallSize) {
-        
-            calcImg.remove('.active')    
+         
+            calcImg.remove('.active')     
             displyOverallSize.classList.add("active"); 
-      
             displyOverallSize.textContent = `Overall size is ${overallSize}cm`
 
             calcHowTo.innerHTML = '';
